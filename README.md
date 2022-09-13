@@ -1,1 +1,1 @@
-Java Script notes
+Computer Science notes
