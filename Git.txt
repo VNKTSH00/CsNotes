@@ -73,3 +73,14 @@ Git creates a seven digit ID(SHA) for every commit inorder to access previous ve
 
 cd -> to go to home directory
 mv -> moving directory can be also used to change the directory or filename
+
+GIT Bash Commands
+
+// git init - create a new repository in local computer
+// git clone (url of the project) -  clone or copy a repository from web
+// git status - to check the status of the repository
+
+// ls - used to list all the files and directories
+// mkdir - used to create a new directory
+// cd - used to change directory
+// rm - used to remove files and directories
