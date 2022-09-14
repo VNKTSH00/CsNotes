@@ -1,3 +1,34 @@
 // Linux Commands
+ 
+ 
+whoami              -  username of the currently logged in user
+man                 -  manuals for commands (man <command>)
+clear               -  clears the terminal screen
+clear -x            -  clears the terminal screen without clearing the history
+ctrl^l              -  same operation as "clear -x"
+pwd                 -  print name of the current/working directory
+ls                  -  list the contents of the directory
+    ls -l           -  use a long listing format
+    ls -a           -  does not ignore entires starting with .
+cd                  -  change directory (created by shell)
+    cd ..           -  go to the parent directory (one level)
+    cd ~            -  go to the home directory
+    cd /            -  go to the root directory
+mkdir               -  create a new directory
+mkdir /path         -  creates a directory in the specified path
+mkdir -p            -  create any necessary parent directory
+touch               -  to create empty files / change file timestamps
+rmdir               -  to remove only empty directories
+rm                  -  to permanently remove files
+    rm -v (verbose) -  shows the list of the removed files
+    rm -r (recurse) -  to remove directories and their child directories
+    rm -ri (decide) -  to verify every file 
+
+time : 1:24:00
+
+
+
+
+   
 
  
