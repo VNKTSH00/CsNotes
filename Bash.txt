@@ -24,7 +24,59 @@ rm                  -  to permanently remove files
     rm -r (recurse) -  to remove directories and their child directories
     rm -ri (decide) -  to verify every file 
 
-time : 1:24:00
+mv (oldname) (newName)                 -    to rename files
+mv (thing) (destination)               -    to move files 
+cp (parentFile) (Destination)          -    to save a copy of a 
+head (filename)                        -    to view the head part of the file 
+tail (filename)                        -    to view the tail part of the file
+date                                   -    to view the date
+    date > (filename)                  -    to save the date in the directory (overwrites the file)
+    date >> (filename)                 -    to save without overwriting 
+cat                                    -    prints the entire contents of the file / contcatenate files
+    cat (file1) (file2) > (file3)      -    concatenate two files and save it in the third file
+                                            can also be used to send the concantenated files to other commands
+    cat -n                             -    prints the output with the number of lines    
+less (filename)                        -    opens the file in a viewable format with a search dialog box
+                                            (space) - to go down a page
+                                            (b)     - to go up a page
+                                            (G)     - to go to the end of the file
+                                            (g)     - to go the start of the file
+                                            (q)     - to quit and go to the terminal 
+echo                                   -    outputs the given text
+    echo >> (output file)              -    saves the conent and redirect to a new file 
+wc                                     -    no of lines / no of words / no of bytes / name of the file
+    wc -c                              -    prints the number of bytes
+    wc -m                              -    prints the number of characters
+    wc -l                              -    prints the number of lines
+
+ // Piping "|"
+
+    Taking the output of one command and passing it as the input of another command
+
+syntax
+
+    cat (file1) (file2) | wc -l > numbers.txt // saves the number of lines from the concatenation of file1 and file2 and saves it in number.txt
+
+sort                                   -    sorts the items in alphabetical order and case sensitve 
+    sort -f                            -    ignores the uppercase while sorting; for numbers with first character 
+    sort -n                            -    sorts numerically
+    sort -n                            -    sorts the numbers in descending order
+    
+
+
+
+
+
+
+     
+
+
+                                           
+   
+
+
+
+
 
 
 
