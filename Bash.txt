@@ -57,19 +57,34 @@ syntax
 
     cat (file1) (file2) | wc -l > numbers.txt // saves the number of lines from the concatenation of file1 and file2 and saves it in number.txt
 
-sort                                   -    sorts the items in alphabetical order and case sensitve 
-    sort -f                            -    ignores the uppercase while sorting; for numbers with first character 
-    sort -n                            -    sorts numerically
-    sort -n                            -    sorts the numbers in descending order
-    
+sort                                    -    sorts the items in alphabetical order and case sensitve 
+    sort -f (filename)                  -     ignores the uppercase while sorting; for numbers with first character 
+    sort -n      ""                     -     sorts numerically
+    sort -n      ""                     -    sorts the numbers in descending order
+    sort -un (filename)                 -    sorts the unique numbers / filenames
 
+uniq                                    -    report or omit adjacent repeated lines (usually used with sort) 
+    sort (filename) | uniq              -    best practice to remove all the duplicates
+    sort (filename) | uniq -d           -    to print only the one with duplicates    
+    sort (filename) | uniq -u           -    to print only the one without duplicates    
+    sort (filename) | uniq -c           -    to print the duplicates with the count 
 
+    sort (filename) | uniq -c | sort -nr > (newfile)    - sorts the items in the file; counts the unique elements; sorts them with the count; and save them in the file 
 
+// path name expansion
+    echo *.txt                          -     shows all the files in the format txt (matching path names)
+    echo *.??                           -     shows all the files that end with two charcter extensions
+    rm *.???                            -     to remove all the files that end with three character expansion
 
+touch {a,b,c,d}.txt                     -     creates a.txt b.txt c.txt d.txt files 
 
-
+ls (filename).*                         -     lists all the files with the same filename without the extension
      
+echo (1..99)                            -     expands from 1 -> 99
 
+mkdir {1..99}.txt                       -     creates (1.txt -> 99.txt) 99 directories
+     
+time 2:16:00
 
                                            
    
