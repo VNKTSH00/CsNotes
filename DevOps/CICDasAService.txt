@@ -125,7 +125,7 @@ BitBucket Pipelines
 
         - Pipes provide a simple way to configure a pipeline 
         - They are especially peowerful when you want work with third-party tools 
-        - A pipe uses a script that lives in a Docker container 
+        - A pipe uses a script that lives in a Docker container (quiz)
         - Since the provided pipes are public, you can check the source code to see how it all works 
         - A pipe is made up of a few different files:
             1. A Script, or binary is the code that performs the task 
