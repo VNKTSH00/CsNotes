@@ -83,6 +83,13 @@ DevOps Phases
     - An organization may want to have control over when builds are released to production 
     - They may want to have a regular release schedule or only release new features once a milesone is met 
 
+// Deploy
+
+    - Finally, a build is ready for the big time and it is released into production 
+    - Same Infrastructure as Code that build the test environement can be configured to build the production environment. 
+    - Blue green deployment lets use switch to the new production environment with no outage 
+    - If at any point, an issue is found with the new build, you can simply tell the hosting service to point requests back to the old environment
+
 
 
     
