@@ -1,0 +1,92 @@
+// Need for DevOps
+// Development And Operations
+// DevOps Principles
+// DevOps Phases
+
+DevOps
+
+Plan -> Build -> Continuous Integration and Deployment -> Monitor -> Operate -> Continuous Feedback -> Plan 
+
+Development
+
+    1. Planning 
+    2. Development
+    3. testing 
+    4. Quality Assurance 
+
+Operations 
+
+    1. Infrastructure Management 
+    2. Security & Complience 
+    3. Database Admin 
+    4. Network Technician 
+
+DevOps Principles 
+
+1. Incremental Release
+2. Automation 
+3. DevOps pipeline
+4. Continuous Integration 
+5. Conitnuous Delivery 
+6. Feedback Sharing 
+7. Version Control 
+8. Collaboration 
+
+DevOps Phases
+
+1. Plan 
+2. Code
+3. Build
+4. Test
+5. Release
+6. Deploy
+7. Operate
+8. Monitor 
+
+// Plan 
+
+    - Happens before the developers start writing code
+    - Project manager takes care of this phase 
+    - Requirement and feedback are gathered from stakeholder and Customers to build the product roadman to guide the future development 
+    - The product roadmap can be recorded and tracked using a ticket management systems like JIRA, help to track milestones, issues  
+    - The backlogs can be used to plan sprints and allocate tasks to the team to being development.
+
+// Code 
+
+    - The team has a standard set of plug-ins installed in their development environments to aid the development processes
+    - Consistent code-styling is enforced to avoid secuity flaws
+    - These tools also help to resolve issues that may fail tests later in the pipeline, resulting in fewer failed builds
+
+// Build
+
+    - Once a developer has finsied a task, they commit their code to a shared code repository
+    - Developer submits a pull request to merge their new code with the shared codebase
+    - Another developer then reviews the changes and approve the pull-request
+    - The pull request triggers an automated process that builds the code base and runs a series of end to end integration and unit tests to identify and regressions
+    - If the build fails, the pull request fails and the developer is notified to resolve the issue by continuously checking the code reqpository
+    - By continously checking code changes into a shared repository and running builds and test, we can highlight breaking bugs early in the develpoment lifecycle
+
+// Test
+
+    - Once the buid succeeds, it is automatically deployed to a staging environments for out-of-band testing
+    - Staging environtment may be an existing hosting servicve, or it could be a new environment provisioned as apart of the deployment process
+    - This practice of automatically provisioning a new environment at the time of deployment is referred to as infrastructure-as-Code (IaC)
+    - IaC is a core part of many DevOps Pipelines
+    - Once the application is deployed to the test enviroment, a series of manaual and automated tests are performed
+    - This phase is considered as test bed, which lets you plug in new testing without interrupting the flow of the developers or impacting the production environment 
+
+// Release 
+
+    - Release phase is a milestone in a DevOps pipeline
+    - Its the point at which we say a build is ready for deployment into the production Environment 
+    - Depending on the DevOps maturity of an Organization, they may choose to automatically deploy any build that makes it to this stage of the pipeline
+    - An organization may want to have control over when builds are released to production 
+    - They may want to have a regular release schedule or only release new features once a milesone is met 
+
+
+
+    
+
+    
+ 
+

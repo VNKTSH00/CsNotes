@@ -1,0 +1,56 @@
+// DevOps
+
+Continuous Integration(CI) and Continuous Delivery(CD) 
+
+DevOps is a set of practices to automate and integrate processes between both Software development and IT Teams
+
+Built -> Test -> Release in a fast and reliable manner 
+
+Adopt Agile Software Delivery Methodologies
+
+CI/CD has become the de-facto software delivery standards 
+
+// Continuous automation and countinous monitoring 
+
+    CI/CD pipeline
+
+    Built -> Integration -> Testing -> Delivery -> Deployment -> Built
+
+Build once Deploy Anywhere
+
+CI/CD tools in the market 
+
+    1. CircleCI
+    2. Jenkins
+    3. Bamboo
+    4. TeamCity
+    5. Gitlab
+
+Four stages of CI/CD pipeline 
+
+    Source -> Build -> Test -> Deploy 
+    
+    Source  (tools)
+    1. Git push 
+    
+    Build (tools)
+    1. Compile 
+    2. Docker Build
+
+    Test (tools)
+    1. Smoke 
+    2. Unit
+    3. Integration
+
+    Deploy (tools)
+    1. Staging
+    2. Quality Assurance
+    3. Production
+
+Contents 
+
+1. Introduction to DevOps
+2. DevOps practices
+3. CI/CD Concepts
+4. CI/CD tools
+5. CI/CD As A Service
