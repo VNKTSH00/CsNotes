@@ -90,6 +90,21 @@ DevOps Phases
     - Blue green deployment lets use switch to the new production environment with no outage 
     - If at any point, an issue is found with the new build, you can simply tell the hosting service to point requests back to the old environment
 
+// Operate
+
+    - New release is now live and being used by the Customers
+    - Operatoins team ensures that everything is running smoothly 
+    - it automatically scales to satisfy the demands 
+    - Organization has also built a way for their customers to provide feedback on their service 
+    - This feedback loop is important 
+    - You need to capture this information 
+
+// Monitor 
+
+    - Final phase of the DevOps cycle is to monitor the environment 
+    - This builds on the customer feedback provided in the Operate phase 
+    - We can also do some introspection and monitor the DevOps pipeline itself 
+    - All of this information is then fed back to the product manager and the development team to close the loop on the proces 
 
 
     
