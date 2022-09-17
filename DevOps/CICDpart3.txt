@@ -1,0 +1,134 @@
+Objetives 
+
+CI/CD tools 
+
+CI/CD tools can help a team to automate their devlopment, deployment, and testing 
+
+    - Some tools specifically handle the integratoin (CI) standardized
+    - Some manage development and deployment (CD)
+    - others specialize in continuous testing or related functions
+
+Best known CI/CD tools:
+
+    - Jenkins 
+    - CircleCI 
+    - TeamCity 
+    - Bamboo 
+    - GitLab
+
+Jenkins 
+
+    - Jenkins is a open sources automation server that provied many plugins to support building, deploying and automating any project
+    - Jenkins is designed to handle anyting from a simple CI server to a complete CD hub 
+    - It is a server based applicatoin and requires a web server like Apache Tomcat
+    - Since it monitors repeated tasks that arise during project development, it became popular 
+    - CI/CD enables the develpoment team to handle frequent code changes for faster and more reliable product delivery 
+    - CI/CD pipeline is the set of steps aimed at improving  the software delivery using the DevOps approach 
+    - This entire process is automated using CI/CD tools like jenkins 
+
+    // Features of Jenkins 
+
+    - Continuous integration and Continuous Delivery 
+    - Desitributed 
+    - Easy configuration
+    - easy Installation 
+    - Plugins 
+    - Extensible 
+
+    // Working of jenkins
+
+    - Jenkins runs as a server on a variety of platfoms 
+    - It requires a java 8 VM and above and can run on Oracle JRE or OpenJDK
+    - Jenkins runs as a Java servlet within a jetty application server 
+    - It can also run on other jave application servers such as Apache Tomcat 
+    - Recently, jenkins has been adapted to run in a Docker Container
+    - To operate Jenkins, pipelines are created
+    - Pipelines are stored in a plain text jenkinsfile and executes its commands 
+    - This server also pushes the code down the pipeline from committed sources code to production runtime 
+
+    Jenkins Pipeline 
+
+    Jenkins Continuous Inegration pipeline consists of the follwoing set of tools
+
+        - Continuous Integration server
+        - Source Control tool 
+        - Build tool 
+        - Automation testing Framework 
+
+CircleCI
+
+    - CircleCI is a lightweight cloud based continuous integration and continuous delivery platform enables teams to deliver quality code, quickly 
+    - It supports Windows, Linux, Docker and macOS and runs in the cloud or behind the firewall
+    - It supporst RubyOnRails, Sinatra, Node, python, php, java 
+    - teams can orchestrate complex workflows to move code through their ideal delivery pipelines 
+    - It has an easily readable YAML configuration 
+    - It does not require a dedicated server to run 
+    - It is suitable for small projects 
+
+    Why CircleCI
+
+        - CircleCI clients use as their CD/CI tool, since jobs run faster and builds are well optimized 
+        - CircleCi can b econfigured to run very complex pipelines efficiently 
+        - It manages abut one million task per day in aid to 30,000 organizations
+        - It further facilitates scalable performance-based pricing options 
+        - You can SSH into any job to debug your build issues 
+        - CircleCI can execute every task in a dedicated container or File
+
+    Features of CircleCI
+
+        1. Highly extensible with integrations 
+            - You can integrate CircleCI with AWS cloud ecosystem, Azure and several other environments/ platfoms to deploy the application 
+        2. Cloud, as well as self-hosted CI/CD solution 
+            - CicleCI can be leveraged to orchestrate CI/CD pipeline
+                1. In the CircleCI cloud hosted computes
+                2. Implement CI/CD by running CircleCI on your infrastructure 
+        3. Custom build environments & Language support 
+            - CircleCI can be configured to imitate your target deployment environment by configuring your pipeline execution environment 
+            - It supports a wide range of languages, including PHP, Python, Java, JavaScript and so on 
+        4. Security and Performance 
+            - With CircleCI, you have application-level security and isolated runtime environment security
+            - CirlceCI is SOC II and fedRamp certified
+            - Effectively uses caching to speed-up builds
+    
+    Working of CircleCI
+
+        - CircleCI integrates with the code version control system
+        - Every time a developer pushes code to the repository, CircleCi creates a pipeline to process the code and test it 
+        - CircleCI automatically runs this newly committed code in an isolated container or a virtual machine 
+        - If the committed code successfully passes the pipeline, it gets pushed to the target staging or to the deployment environment
+
+Jetbrains TeamCity 
+
+    - TeamCity is a commerical, Java-based build management, and continuous integration server created by Jetbrains
+    - It is known fro its ease of setup, out-of-the-box usablity and beautiul user interface 
+    - It can be installed on Windows and Linux servers
+    - It also provides support for the .Net framework and can be integrated into IDEs such as Visual studio and Ecplise 
+    - conditional build steps are supported by this version 
+    - You can also launch build agents in a Kubernetes cluster 
+    - You can also integrate it with popular project management tools such as Azure DevOps and Jira 
+
+    Why TeamCity 
+
+    - It offers an impressive set of features to match Jenkins 
+    - It provides integration to Jira for tracking issues with ease
+    - It also integrates with IDEs such as Visual Studio and Eclipse 
+    - It provides .NET framework support 
+    - It has a build artifact repository integrated into it 
+    - Free version of Teamcity - Professional server license provides 100 builds and three build agents at zero cost 
+
+    Features of TeamCity 
+
+    - Technology Awareness 
+    - key Integrations 
+    - Cloud Integrations 
+    - Continuous Integration 
+    - Configuration 
+    - Build History 
+    - Build Infrastructure 
+    - Code Quality tracking 
+    - extensibility and Customization 
+    - VSC Interoperability 
+    
+
+        
+
