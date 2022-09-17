@@ -1,0 +1,195 @@
+CICD as a service 
+
+1. Azure pipelines
+2. AWS pipelines
+3. Bitbucket pipelines
+4. GitLab Pipelines 
+
+// A CI/CD pipeline is used to automate the process of continuous integration and continuous deployment 
+// Pipeline facilitates the softwaare delivery process via stages like Build, test, merge and deploy 
+
+Stages of CI/CD pipeline 
+
+    - Source  (change in code triggers)
+    - Build   
+    - Test    
+    - Deploy 
+
+Azure DevOps 
+
+    - Azure DevOps is a collection of services given by Microsoft Azure
+    - It provides development services for a team to support, plan, collaborate, build and deploy applications  
+    - It provides integrated features in a browser or an IDEs
+    - Some of the services for developers are: 
+        1. Azure Repos
+        2. Azure Pipelines
+        3. Azure Boards
+        4. Azure Test Plans
+        5. Azure Artifacts
+    - These resources are quite useful, especially Azure pipelines
+
+    Azure  Pipelines 
+
+        - Azure Pipelines supports continuous integration and Continuous Delivery to constantly and consistently test and build your code and ship it to any target 
+        - You accomplish this by defining a pipeline 
+        - You define pipelines using the YAML syntax or through the user interface (classic)
+
+    Azure Pipelines advantages
+
+        - Version Control Systems
+        - Programming Languages and application types
+        - Deployment targets
+        - Pricing 
+
+    Define pipelines using YAML syntax
+
+        - You define your pipeline in a YAML file called azure-pipelines.yml with the rest of your app 
+        - Pipeline is versioned with your code. 
+        - It follows the same branching structure 
+        - Every branch you use can modifythe build policy by modifying the azure-pipelines.yml file
+        - A change to build process might cause a break or result in an unexpected outcome
+        - Since the change is in version control with the rest of your codebase, you can more easily identify the issue 
+
+    Define pipelines with Azure GUI
+
+        - Create and configure pieplines in the Azure DevOps web portal with Classic user interface 
+        - define a build pipeline to build and test your code, and then to publish artifiacts
+        - Also define a release pipeline to consume and deploy those artifacts to deployment targets
+    
+    Building a Azure CI/CD pipeline 
+
+        - To create an Azure CI/CD pipeline, you need to follow the below-given steps:
+        - Create an ASP.NET sample DevOps project using Azure DevOps starter resource in Azure 
+        - Examine Azure CI/CD pipelines configured by Azure DevOps starter
+        - Clone the sample DevOps project ot the system 
+        - Commit the code and execute CI/CD 
+        - Prerequisites
+            1. You will need an active azure account for creating Azure Repos and Pipelines. You can create a microsoft azure account for the same 
+            2. For creating a sample app, we will be using Visual Studio and .NET Core. 
+
+Aws CodePipeline
+
+    - it is a fully managed continuous delivery service that help sto automate realease peipleines for fast and reliable application and infrastructure updates
+    - With this pipeline, you can model the full release process for building your code, deploying to pre-production environments, testing your application and releasing it to production 
+    - Pipeline then builds, tests and deploys the application according to the defined workflow whenever there is a code change 
+    - you can integrate partner tools and own custom tools into any stage of the release process
+    - You only pay for what you use 
+
+    Why AWS Pipeline 
+
+    - Enables to incraese the speed and quality of software updates
+    - All the new changes run through a consistent set of Quality checks 
+
+    Source (commits) -> Build -> Staging (tested) -> Manual Approval -> Production (deployment) -> Customer (ideas, requests, bugs) -> Developers (updates, fixes)
+
+    Setting up 
+
+    - Use GitHub account with AWS S3 bucket or AWS CodeCommit repository as the source 
+    - Elastic Beanstalk also can be used as the deployment target for the sample app 
+    - completed pipeline will be able to detect changes made to the source repository containing the sample app and then automatically update the live sample app 
+
+    Steps to setting up an automated software release pipeline to deploy a live sample app 
+    
+    1. Create a deployment environment 
+    2. Get a copy of the sample code 
+    3. Create the pipeline
+    4. Activate pipeline to deploy the code 
+    5. Commit a change and then update your app 
+    6. Clean up your resources 
+
+BitBucket Pipelines
+
+    - It is an integrated CI/CD service built into BitBucket 
+    - It allows to automatically build, test, and deploy the code based on a configuration file in your repository 
+    - Inside these containers, you can run commands
+    - It enables to build powerful, automated CI/CD pipelines
+
+    BitBucket features 
+
+        - Code Reviews
+        - Branch Persmissions
+        - Pipelines 
+        - Build Integrations 
+        - Jira Software integration 
+        - Trello Boards
+        - Diff views
+        - Projects 
+        - IDE integration 
+
+    //YAML file 
+
+        - A pipeline is defined using a YAML file called bitbucket-pipelines.yml
+        - This file will be located at the root of your repository 
+
+    // Pipe 
+
+        - Pipes provide a simple way to configure a pipeline 
+        - They are especially peowerful when you want work with third-party tools 
+        - A pipe uses a script that lives in a Docker container 
+        - Since the provided pipes are public, you can check the source code to see how it all works 
+        - A pipe is made up of a few different files:
+            1. A Script, or binary is the code that performs the task 
+            2. A Dockerfile, which tells us how to build the Docker container 
+            3. (optional) metadata and readme docs, to make your pipe easy to understand
+            4. (optional) some CI/CD configuration so that you can easily update the pipe
+
+    Using pipes
+
+        - Using the editor to add pipes to the pipeline 
+        - Edit the configuration directly 
+
+    Ways to configure pipeline 
+
+        - Directly write the YAML file 
+        - use the GUI provided by the BitBucket
+        - One repository is mandatory to start 
+    
+GitLab Pipelines 
+
+    - GitLab is a fully integrated software development platform 
+    - It is a lifecycle tool that provides a vast repository on Web-based DevOps 
+    - It enables the team to be transparent, fast, effective, and cohesive from a discussion on a new idea to production all on the same platform 
+    - Code in Gitlab is available from many program languages and mostly it is written in Ruby and fewer parts are scripted in GO 
+    - GitLab CI/CD is the part of GitLab that you use for all of the continuous methods 
+    - With gitLab CI/CD you can test build and publish your software with no third-party application or integration needed 
+
+    CI/CD pipelines 
+
+        - pipelines are the top levle component of continuous integration , delivery and deployment 
+        - Pipelines comprise of 
+            1. Jobs which define what to do 
+            2. stages, which define when to run the jobs 
+        - jobs are executed by runner 
+        - In general, Pipelines are executed automatically and require no intervention once created
+        - A typical pepeline might consist of four stages, executed in the following order: 
+            1. A build stage, with a job called compile 
+            2. A test stage, with two jobs called test1 and test2
+            3. A staging stage, with a job called deploy-to-stage 
+            4. A production stage, with a job called deploy-to-prod
+    
+    CI/CD process 
+
+        - Ensure that runner are available to run the jobs 
+        - Create a .gitlab-ci.yml file at the root of your repository 
+        - view the status of your pipeline and job 
+
+    Setting up a CD pipeline with GitLab CI/CD on Ubuntu 
+
+        - Creating a GitLab repository 
+        - Registering a GitLab Runner 
+        - Creating a deployment user 
+        - Setting up an SSH key 
+        - Storing the Private Key in a GitLab CI/CD variable
+        - Configuring the .gitlab-ci.yml File 
+        - Validating the Deployment 
+        - Rolling back a Deployment 
+
+ 
+
+    
+
+
+
+
+
+

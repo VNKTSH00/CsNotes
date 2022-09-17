@@ -128,7 +128,83 @@ Jetbrains TeamCity
     - Code Quality tracking 
     - extensibility and Customization 
     - VSC Interoperability 
+
+Bamboo
+
+    - Bamboo is a continuous integratoin server developed by Atlassian 
+    - It can be used to automate the release management for a software application, creating a continuous delivery pipeline
+    - It has buildt-in Git Branching workflows and deployment projects as well as built-in Integrations with other Atlassian software
+    - It is available for platforms such as Windows, Mac OSX, and Linux
+    - Bamboo uses the concepts of agenst to perform all CI-CD tasks including build, test and deploy
+    - There are two types of agents: 
+        1. Local agents - run as part of the Bamboo server as it process
+        2. Remove agents - run on any servers and computers
+    - Deployment is quite easy as it provides the feature of selecting the deployment project and "configure" to accomplish it
+
+    Why Bamboo
+
+    - Bamboo becomes stronger with its built-in integratoin with other Atlassian tools, such as jira software and Bitbucket server
+    - You can get visbility over code changes, build results, and deployments details throughout the paltforms 
+    - Provides an automated and reliable build/test process, leaving you free to code more 
+    - Bamboo has a much user-friendly approach with a neat and intutive user interface 
+
+    Features of Bamboo
+
+    - Documentation 
+    - Platform dependency 
+    - Plugin support 
+    - Compatiblity 
+
+    Bamboo working 
+
+    - Bamboo first gets your source from a source repository 
+    - Bamboo starts the build
+    - Once your solution or project is built, you have "artifacts"
+    - You can do additional things with the build artifacts: 
+        1. Zip them up into a zip file and copy them somewhere 
+        2. run an install builder on them and create an monitors
+        3. install them on a test server to make sure everything installs just fine 
+    - Bamboo provides a web front-end for configuration for reporting the status of builds 
+     
+GitLab
+
+    - GitLab CI/CD was inegrated into the main GitLab software with the gitlab 8.0 release
+    - GitLab CI/CD and Gitlab are writeen in Ruby and Go and launched under an MIT license 
+    - GitLab CI/CD is a UI based Web applicatoin that manages projects or builds
+    - It is also accessible through APIs 
+    - GitLab Runner processes your builds 
+    - It runs the script by working in tandem with GitLab CI/CD through an API interface 
+    - Runners can run tests in any language across platforms 
+    - A GitLab CI/CD server can manage more than 25000 users
     
+    Why GitLab 
+
+        - Dev and Ops teams work together 
+        - Only single applicatoin for the entire Devops Cycle 
+        - Security is built in 
+        - Transparency is by default 
+        - Everyone can contribute 
+
+    Features of GitLab
+
+        - High Availability deployments 
+        - Multi-environment, Multi-platform, Multi-language
+        - GitLab CI/CD cloud vs. Self-Hosted 
+        - Integrations 
+        - Security and performance 
+        - Milestone setting 
+        - Code Reviews and Merge Requests 
+        - Issue Tracking and Issue Shuffling 
+        - Jekyll Plugins Support
+
+    GitLab Working 
+
+        - Install and regiester a runner for the project
+        - Define the CI/CD jobs in a structured order and with well-defined actions
+        - Save this YAML file as .gitlab-ci.yml file in the root directory of the project
+        - A GitLab CI/CD pipeline contains four stages
+        - If the code commit passes all these stages, it is successfully delivered/deployed 
+            
 
         
 
