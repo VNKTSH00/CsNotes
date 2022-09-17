@@ -1,0 +1,117 @@
+Objetives 
+
+1. DevOps practices
+2. CI/CD Concepts
+
+DevOps practices
+
+    - Continuous Integration 
+    - Continuous Delivery 
+    - Microservices
+    - Infrastructure as Code
+    - Monitoring and logging 
+    - Communication and Collaboration 
+
+Continuous Integration 
+
+    - It refers to the build and Unit testing stage of the software release process 
+    - Every revision that is committed triggers an automated build and test 
+    - Find bugs quicker and improves software quality 
+
+Continuous Delivery
+
+    - Continous delivery automates the entire software release process 
+    - Every revision that is committed triggers and automated flow that builds, tests, and then stages the update
+    - Final decision to deploy to a live production environment is triggered by the developer 
+    - This tests include 
+        - unit testing 
+        - load testing 
+        - integration testing 
+        - API reliablity testing and so on 
+     - with cloud it is easy and cost effective to automate the creation and replication of mulitple environment for testing
+
+Microservices
+
+    - Microservices architecture is a design approach to build a single application as a set of small services 
+    - Each service runs in its own process and communicates with other services through a well-defined interface using a light weight mechanism, typically a FTP baseed application programming interface 
+    - You can use different framworks or programming languages to write microservices and to deploy them 
+
+Infrastructure as Code
+
+    - It is a practice in which infracture is provisioned and managed using code and software development techniques, such as version control and continuous integration 
+    - Cloud's API-driven model enables developers and system adminstrators to interact with infrastructure programmatically
+    - Engineers can interface with infrastructure using code-based tools
+    - Infrastructure and servers can quickly be deployed using standardized patterns
+    - Configuaration management
+        - Things are automated in configuring the operating systems.
+        - It frees developers and systems adminstrators from manually configuring operating systems, system applications or server software
+    - Policy as code
+        - With infrastructure and its configuration coded with the cloud, organizations can monitor and enforce compliance dynamically and at scale 
+        - Infrastructure that is described by code can thus be tracked, validated, and reconfigured in an automated way 
+    
+Monitoring and Logging 
+
+    - organizations monitor metrics and logs to see how application and infrastructure performance impacts the experience of their product's end user
+    - Active monitoring becomes increasingly important as services must be available 24/7 and as application and infrastructure update frequency increases
+    - Communication and collaboration 
+    - Use of DevOps tooling and automation of the software delivery process establishes collaboration by physically bringing together the workflows and responsiblities of develoment and operations 
+    - Teams set strong cultural norms aroundinformation sharing and facilatates communication through the use of chat applications, issue or project tracking systems, and wikis
+
+CI/CD Concept 
+
+    - Continuous Integration 
+    - Continuous Deployment 
+    - Continuous Delivery 
+
+Continuous Integration
+
+    - Continuous Integration is a development practice wher develoeprs integrate code into a shared repository frequently, prferably severl times a day 
+    - Each integration can then be verified by an automated build and automated tests
+    - By working in small iterations, the software development process becomes predictable and reliable 
+    - Developers can fix bugs quickly and usually discover them before they even reach users 
+    - Results need to be transparently available to all team memebrs 
+    - Build status is reported to developers when they are changing the Code
+
+    // Need for continuous integration 
+         
+        - In the past, developers on a team might mwork in isolation for an extended period of time 
+        - He/She merges their changes to the master branch once their work was completed 
+        - This made merging code changes difficult and time consuming
+        - By automating all integration steps, developers avoid rpetitive work and human error
+        - CI tool monitors the central code repository and runs all automated tests on every-commit 
+
+    // Benefits fo Continous Integration 
+
+        - Improve Developer productivity 
+        - Find and Address Bugs Quicker 
+        - Deliver Updates Faster
+
+Continuous Delivery 
+
+    - Continuous Delivery is an extension of continuous integration, Since it automatically deploys all code changes to testing and/or production environment after the build stage
+    - Deploy to production as early as possilble to make sure that you release small batches that are easy to troubleshoot in case of a problem 
+
+    // Benefits of Continuous Delivery 
+
+        - Automate the Software release process
+        - Improve Developer Productivity 
+        - Find and Address Bugs Quicker 
+        - Deliver Updates Faster
+
+Continuous Deployment 
+
+    - Continuous deployment goes one step further than continuous delivery 
+    - Every change that passes all stages of the production pipeline is released to Customers
+    - There's no human intervention, only a failed test will prevent a new change to be deployed to production 
+
+    // Benefits of Conitnuous Deployment 
+
+    - Reduced risk and cost 
+    - Increased Innovation 
+    - Enhanced Qality of release 
+    - Increased customer feedback and satisfaction 
+    - Enhanced visiblity and tracking     
+
+
+
+
