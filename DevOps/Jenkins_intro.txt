@@ -1,4 +1,4 @@
-Jenkins (open source) Java at core 
+Jenkins (open source) - Java at core - Support to unlimited plugins 
 
  Jenkins support for all 
 
@@ -19,6 +19,37 @@ Jenkins (open source) Java at core
     Testing Frameworks 
 
     Report Generators 
+
+Objectives 
+    
+    - Jenkins
+    - Continuous Integration and continuous deployment using Jenkins
+    - Distribution builds with Jenkins
+
+// Jenkins is a self-contained, open source automation server used to automate task on building, testing and delivering or deploying software 
+
+    with Jenkins 
+
+        - Build
+        - Document 
+        - Test 
+        - Package 
+        - Stage 
+        - Deploy 
+        - Static analysis 
+
+Workflow 
+
+    Commit Source Code -> Jenkins trigger a build -> Jenkins runs a test -> Notification to the developer 
+
+Jenkins Automated Software Release pipeline 
+
+    Continuous Integration -> Continuous Delivery -> Continuous Deployment 
+
+    Code Commit -> Build -> Test -> Release -> deliver/deploy 
+
+    
+
 
 
 

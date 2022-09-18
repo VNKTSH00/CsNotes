@@ -19,7 +19,7 @@ Best known CI/CD tools:
 Jenkins 
 
     - Jenkins is a open sources automation server that provied many plugins to support building, deploying and automating any project
-    - Jenkins is designed to handle anyting from a simple CI server to a complete CD hub (quiz)
+    - Jenkins is designed to handle anyting from a simple CI server to a complete CD hub 
     - It is a server based applicatoin and requires a web server like Apache Tomcat
     - Since it monitors repeated tasks that arise during project development, it became popular 
     - CI/CD enables the develpoment team to handle frequent code changes for faster and more reliable product delivery 
@@ -63,7 +63,7 @@ CircleCI
     - teams can orchestrate complex workflows to move code through their ideal delivery pipelines 
     - It has an easily readable YAML configuration 
     - It does not require a dedicated server to run 
-    - It is suitable for small projects (quiz)
+    - It is suitable for small projects 
 
     Why CircleCI
 

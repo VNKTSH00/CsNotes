@@ -72,7 +72,7 @@ Continuous Integration
     - By working in small iterations, the software development process becomes predictable and reliable 
     - Developers can fix bugs quickly and usually discover them before they even reach users 
     - Results need to be transparently available to all team memebrs 
-    - Build status is reported to developers when they are changing the Code (quiz)
+    - Build status is reported to developers when they are changing the Code 
 
     // Need for continuous integration 
          
@@ -112,7 +112,7 @@ Continuous Deployment
     - Increased Innovation 
     - Enhanced Qality of release 
     - Increased customer feedback and satisfaction 
-    - Enhanced visiblity and tracking  (quiz)   
+    - Enhanced visiblity and tracking    
 
 
 
