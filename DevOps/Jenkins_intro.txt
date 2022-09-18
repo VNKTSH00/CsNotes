@@ -1,0 +1,27 @@
+Jenkins (open source) Java at core 
+
+ Jenkins support for all 
+
+    source code management systems (SCM systems)
+
+        - Git 
+        - Subversion 
+        - Mercurial 
+        - CVS
+    
+    Build tools 
+
+        - Maven 
+        - Ant
+        - Gulp
+        - Grunt 
+
+    Testing Frameworks 
+
+    Report Generators 
+
+
+
+        
+
+
