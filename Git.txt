@@ -139,3 +139,5 @@ git reset (reference to commit)      - to erase commit
 git reset --hard                     - erase the commit 
 git reset --soft                     - moves the commited changes to the staging index 
 git reset --mixed                    - unstages the commited changes 
+
+unwanted 
