@@ -108,8 +108,9 @@ GIT Bash Commands
 // git merge                        - combines changes on different branches
 
 // git checkout (branch name)       - to change the branch 
+   git checkout -b (branch name)    - creates a new branch while checking out (-b flag is used to create a new branch)
 // git branch                       - shows the current working branch 
 // git branch (name)                - Creates a branch with the name specified 
+// git branch (name) (SHA)          - Creates a branch from the SHA (commit) spcified
 // git branch -d (name)             - Deletes the branch with the name specified 
 
-0e410d0
