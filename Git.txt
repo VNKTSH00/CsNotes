@@ -129,3 +129,13 @@ git alter
 git revert (SHA)                    - to revert the previously made commit 
 git reset (commit)                  - to delete the commit in order 
 
+Reset vs Revert
+
+    At first glance, resetting might seem coincidentally close to reverting, 
+    but they are actually quite different. Reverting creates a new commit that reverts or undos a previous commit. 
+    Resetting, on the other hand, erases commits!
+
+git reset (reference to commit)      - to erase commit
+git reset --hard                     - erase the commit 
+git reset --soft                     - moves the commited changes to the staging index 
+git reset --mixed                    - unstages the commited changes 
