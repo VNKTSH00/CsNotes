@@ -125,4 +125,4 @@ GIT Bash Commands
         Remember that a merge conflict occurs when the exact same line(s) are changed in separate branches. 
     
 git commit --amend                  - To alter the most recent Commit
-
+git alter 
