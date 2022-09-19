@@ -1,0 +1,117 @@
+Jenkins Pipeline 
+
+Objectives 
+
+    - Declarative and syntax pipeline 
+    - Pipeline concepts 
+    - Pipeline syntax
+    - Built-in Documentation 
+    - Snippet generator 
+    - Global variable reference 
+    - Declarative directive generator 
+
+// Jenkins pipeline is a suite of plugins that supports implementing and integrating continuous delivery pipeline
+
+    Continuous Delivery pipeline 
+
+        - It is an automated expression of your process for getting softwrae version control 
+        - Change in the software goes through a process and is released 
+        - Process involves building the software in a reliable and repeatable manner 
+        - Built software through multiple stages of test and deployment 
+
+    Jenkins pipeline definition is writeen in text files called "jenkinsfile". This is the foundation of pipleines as code. The conitnuous deliver pipeline is a part of the application to be versioned and reviewd like any other code 
+
+    Creating a Jenkinsfile and committing it to source control has several advantages
+
+        - Creates a pipeline automatically to build process for all branches and pull requests 
+        - Code reivew/iteration on the pipeline 
+        - Audit trail for the pipeline. 
+        - The pipeline has a single source of truth that can be viewed and edited by multiple project members. 
+    
+// Declarative vs Scripted Pipeline syntax
+
+    1. Jenkinsfile can be writeen in Declarative and scripted types of syntaxes 
+    2. Both types are contruted differently
+    3. Declarative pipeline has more a recent feature of jenkins pipeline 
+        - Provides rich syntax feature over pipeline code easier 
+        - Designed to write and read the pipeline code easier 
+        - Many syntax compnenets written into a jenkinsfile are common to both types 
+
+// Pipeline 
+
+    1. A pipeline is an automation engine that supports a number of automation patterns. 
+    2. Pipeline adds a powerful set of automation tools onto jenkins 
+    3. Users can take advantage of the many features of pipeline:
+        - Code
+        - Durable 
+        - Pausable 
+        - Versatile 
+        - Extensible 
+    4. Allows basic forms of chaining freestyle jobs together to perform sequential tasks
+    5. Pipeline makes this concept a first-class citizen in jenkins 
+    6. Core jenkins value of extensibility 
+
+    // Key aspects of jenkins Pipeline which tie in closely to pipeline syntax. 
+
+        - Pipeline (shows the entire build process)
+        - Node     (machine that executes the pipeline)
+        - Stage    (describes the set of tasks performed in the pipeline)
+        - Step     (single task tells what needs to be done at the particular point of time)
+
+    Pipeline syntax
+
+        pipeline {
+            agent any 
+            stages {
+                stage('Build') {
+                    steps {
+                        //
+                    }
+                }
+                stage('Test') {
+                    steps {
+                        //
+                    }
+                }
+                stage('Deploy') {
+                    steps {
+                        //
+                    }
+                }
+            }
+        }
+    
+    // Scripted Pipeline fundementals 
+
+        - In Scripted Pipelines syntax, one or more node blocks do the core work throughout the entire Pipeline 
+        - Although this is not a mandatory requirement of Scripted Pipeline syntax, confining your Pipeline's work inside of a node block does two things: 
+        - Schdules the steps contained within the block to run by adding and item to the jenkins queue. As soon as an executor is free on a node, the steps will run. 
+        - Creates a workspace (a directory specific to that particular Pipeline) where work can be done on files checked out from source control. 
+
+    Scripted pipeline syntax - Jenkinsfile ( scripted pipeline )
+
+        node {
+            stage ('Build'){
+                //
+            }
+            stage ('Test'){
+                //
+            }
+            stage ('Deploy'){
+                //
+            }
+        }
+
+    // Ways in creating a pipeline 
+
+        - Through Blue Ocean 
+        - Through Classic UI
+        - Through SCM 
+
+    
+
+
+
+    
+    
+

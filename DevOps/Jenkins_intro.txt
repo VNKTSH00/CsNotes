@@ -36,7 +36,7 @@ Objectives
         - Package 
         - Stage 
         - Deploy 
-        - Static analysis 
+        - Static analysis  
 
 Workflow 
 
