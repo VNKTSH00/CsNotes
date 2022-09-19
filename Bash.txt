@@ -1,5 +1,6 @@
 // Linux Commands
  
+ Yputube - https://youtu.be/ZtqBQ68cfJc
  
 whoami              -  username of the currently logged in user
 man                 -  manuals for commands (man <command>)
@@ -25,7 +26,7 @@ rm                  -  to permanently remove files
     rm -ri (decide) -  to verify every file 
 
 mv (oldname) (newName)                 -    to rename files
-mv (thing) (destination)               -    to move files 
+mv (file) (destination)               -    to move files 
 cp (parentFile) (Destination)          -    to save a copy of a 
 head (filename)                        -    to view the head part of the file 
 tail (filename)                        -    to view the tail part of the file
@@ -58,8 +59,8 @@ syntax
     cat (file1) (file2) | wc -l > numbers.txt // saves the number of lines from the concatenation of file1 and file2 and saves it in number.txt
 
 sort                                    -    sorts the items in alphabetical order and case sensitve 
-    sort -f (filename)                  -     ignores the uppercase while sorting; for numbers with first character 
-    sort -n      ""                     -     sorts numerically
+    sort -f  (filename)                 -    ignores the uppercase while sorting; for numbers with first character 
+    sort -n      ""                     -    sorts numerically
     sort -n      ""                     -    sorts the numbers in descending order
     sort -un (filename)                 -    sorts the unique numbers / filenames
 
@@ -80,14 +81,16 @@ touch {a,b,c,d}.txt                     -     creates a.txt b.txt c.txt d.txt fi
 
 ls (filename).*                         -     lists all the files with the same filename without the extension
      
-echo (1..99)                            -     expands from 1 -> 99
+echo {1..99}                            -     expands from 1 -> 99
 
 mkdir {1..99}.txt                       -     creates (1.txt -> 99.txt) 99 directories
      
-time 2:16:00
+diff (firstFile) (secondFile)           -     to find the difference between two different files 
+
+    diff -u (fileName1) (fileName2)     -     to get the detailed view of the changes 
 
                                            
-   
+time 2:21:20 
 
 
 
