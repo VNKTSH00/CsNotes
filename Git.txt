@@ -103,9 +103,6 @@ GIT Bash Commands
     git tag -d (name)               - to delete a tag
     git tag --delete (name)         - to delete a tag
      git tag -a beta (tagName)      - to add tag to the recent commit 
-// git branch                       - allows multiple lines of development 
-// git checkout (branch)            - to switch from one branch to another 
-// git merge                        - combines changes on different branches
 
 // git checkout (branch name)       - to change the branch 
    git checkout -b (branch name)    - creates a new branch while checking out (-b flag is used to create a new branch)
@@ -113,4 +110,19 @@ GIT Bash Commands
 // git branch (name)                - Creates a branch with the name specified 
 // git branch (name) (SHA)          - Creates a branch from the SHA (commit) spcified
 // git branch -d (name)             - Deletes the branch with the name specified 
+
+// git merge (branchName)           -   1. look at the branches that it's going to merge
+                                        2. look back along the branch's history to find a single commit that both branches have in their commit history
+                                        3. combine the lines of code that were changed on the separate branches together
+                                        4. makes a commit to record the merge
+
+                                        (The branch being merged in must be ahead of the checkout branch. The checked out branch's pointer will just be moved forward to point to the same commit as the other branch)
+                                        (Inorder to merge two branches other than main. checkout to the other branch and run the merge command)
+
+    
+    MERGE CONFLICT
+
+        Remember that a merge conflict occurs when the exact same line(s) are changed in separate branches. 
+    
+git commit --amend                  - To alter the most recent Commit
 
