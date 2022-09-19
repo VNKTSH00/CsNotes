@@ -126,3 +126,5 @@ GIT Bash Commands
     
 git commit --amend                  - To alter the most recent Commit
 git alter 
+git revert (SHA)                    - changes made in the particular commit (SHA) is reverted
+git reset (commit)                  - to delete the commit in order 
