@@ -89,14 +89,13 @@ GIT Bash Commands
 // git log --oneline                - To view all the list of commits made  
 // git log -p                       - To view where the changes were made in the commit (patch command)
 
-// git add  (file)                  - adds file to staging area
 // git branch                       - Lists the local branches in the current repository     
 // git checkout (branch)            - to switch from one branch to another 
-// git commit -m (message)          - to records or snapshots the file permanently for version history 
-// git commit -a (message)          - commits any files you've added with the git command and also commits any files you've changed since then 
-// git diff                         - shows the differences which are not yet staged 
 // git merge                        - this command merges the specified branch's history to the current branch 
 // git push [variable name]         - sends the commited changes of master branch to the remote repository  
 // git push --all                   - pushes all branches to the remote repository 
 
-// git show                         - 
+// git add  (fileName)              - adds file to staging area
+    git add .                       - to add all the repos 
+// git commit -m (message)          - to records or snapshots the file permanently for version history 
+// git diff                         - shows the differences which are not yet staged 
