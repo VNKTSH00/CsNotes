@@ -88,10 +88,8 @@ GIT Bash Commands
 // git log                          - to view the logs of all the commits made
 // git log --oneline                - To view all the list of commits made  
 // git log -p                       - To view where the changes were made in the commit (patch command)
+// git log --decorate               - to view the hidden elements like tags in the command line 
 
-// git branch                       - Lists the local branches in the current repository     
-// git checkout (branch)            - to switch from one branch to another 
-// git merge                        - this command merges the specified branch's history to the current branch 
 // git push [variable name]         - sends the commited changes of master branch to the remote repository  
 // git push --all                   - pushes all branches to the remote repository 
 
@@ -99,3 +97,14 @@ GIT Bash Commands
     git add .                       - to add all the repos 
 // git commit -m (message)          - to records or snapshots the file permanently for version history 
 // git diff                         - shows the differences which are not yet staged 
+
+// git tag -a (message)             - to adds to specific commits (-a = this flag tells Git to create and annotated flag)
+    git tag                         - displays all the tags available in the repository 
+    git tag -d (name)               - to delete a tag
+    git tag --delete (name)         - to delete a tag
+    git tag -a (SHA)                - to add tags to old commits 
+     git tag -a beta                - to add tag to the recent commit 
+// git branch                       - allows multiple lines of development 
+// git checkout (branch)            - to switch from one branch to another 
+// git merge                        - combines changes on different branches
+
