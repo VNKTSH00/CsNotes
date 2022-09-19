@@ -129,7 +129,3 @@ git alter
 git revert (SHA)                    - to revert the previously made commit 
 git reset (commit)                  - to delete the commit in order 
 
-<<<<<<< HEAD
-=======
-unwanted data 
->>>>>>> 41b74361e1a39ba16bbc8d255a440632c415274f
