@@ -124,8 +124,7 @@ GIT Bash Commands
 
         Remember that a merge conflict occurs when the exact same line(s) are changed in separate branches. 
     
-git commit --amend                  - To alter the most recent Commit
-git alter 
+git commit --amend                  - To alter the most recent Commit 
 git revert (SHA)                    - to revert the previously made commit 
 git reset (commit)                  - to delete the commit in order 
 
@@ -135,7 +134,18 @@ Reset vs Revert
     but they are actually quite different. Reverting creates a new commit that reverts or undos a previous commit. 
     Resetting, on the other hand, erases commits!
 
+git checkout -- .                    - to discard changes in the working directory 
 git reset (reference to commit)      - to erase commit
-git reset --hard                     - erase the commit 
+git reset --hard HEAD^               - erase the commit last commit  
 git reset --soft                     - moves the commited changes to the staging index 
 git reset --mixed                    - unstages the commited changes 
+
+
+Here's how we can refer to previous commits:
+
+The parent commit – The following indicate the parent commit of the current commit
+HEAD^ (or) HEAD~ (or) HEAD~1
+The grandparent commit – The following indicate the grandparent commit of the current commit
+HEAD^^ (or) HEAD~2
+The great-grandparent commit – The following indicate the great-grandparent commit of the current commit
+HEAD^^^ (or) HEAD~3
