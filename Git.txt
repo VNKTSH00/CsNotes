@@ -107,3 +107,9 @@ GIT Bash Commands
 // git checkout (branch)            - to switch from one branch to another 
 // git merge                        - combines changes on different branches
 
+// git checkout (branch name)       - to change the branch 
+// git branch                       - shows the current working branch 
+// git branch (name)                - Creates a branch with the name specified 
+// git branch -d (name)             - Deletes the branch with the name specified 
+
+0e410d0
