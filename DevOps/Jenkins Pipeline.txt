@@ -108,7 +108,182 @@ Objectives
         - Through Classic UI
         - Through SCM 
 
+        Through Blue ocean 
+
+            - Automatically creates and writes your pipeline 
+            - Security and authenticated connection to project source control repository 
+            - Change in the jenkinsfile via blue ocean pipeline eidtor are automatically saved and committed to source control 
+        
+        Through The SCM 
+
+            - Complex pipelines are difficult to write and maintain in classic UI 
+            - Jenkinsfile can be written in a text editor or in IDE and commit to source control 
+            - Jenkins can checkout the jenkinsfile from source control as part of the pipeline project 
+
+    // Built in doucmentation can be used for the creation process 
+
+    Snippet Generator 
+        
+        1. Snippet generator is a built-in utility for 
+            - Creating bits of code for individual steps 
+            - Discovering new steps provided by the plugins 
+            - Experimenting with different parameters for a particular step 
+        2. Dynamically populated with the list of steps available 
+        3. Steps available based on the plugins installed 
     
+        Global Vaiable Reference 
+
+            1. Pipeline provides built in a global variable reference 
+            2. It is a dynamically populated plugin 
+            3. Global variable reference contains only the variable documentation 
+            4. Default variables in pipelines are 
+                - Env 
+                - Params 
+                - CurrentBuild 
+
+        Delcarative Directive Generator 
+
+            1. Snippet Generator helps with Generating steps for Scripted Pipeline 
+            2. Does not cover the sections and directive to define a declarative pipeline 
+            3. Directive Generator allows you to choose a Declrative directive that can be used in pipelines 
+        
+// Jenkinsfile 
+
+    Objectives
+        
+        - Creating jenkinsfile 
+        - Different types of stages 
+        - Working with jenkinsfile 
+        - Using environment variable 
+        - Setting up environment variable 
+        - Handling credentials 
+        - Handling parameters 
+    
+    Jenkins file 
+
+        Jenkins file is a test file that contains the definition of jenkins pipeline 
+        Implements three stages of continuous delivery pipeline 
+
+        1. Build stage 
+
+            - Initial task in the pipeline will be build stage 
+            - Source code is assembled, compiled and packaged 
+            - Other build tools like GNU/make, Maven, Gradle are available 
+
+        2. Test Stage 
+
+            - An automated test is a crucial component in the continuous delivery process 
+            - Jenkins has plugins for test recording, reporting and visualization facilities.
+            - When a test fails, it's useful to keep a jenkins record of the failures for reporting and visualization in the web UI 
+
+        3. Deploy Stage 
+
+            - The deployment stage implies a variety of steps depend on the project 
+            - Publishing built artifacts to a server to push code to the production system 
+            - Once the build and test stage is passed, then only the deployment stage will execute 
+            - if the previous stage is failed, this stage will not be processed in the pipeline 
+
+    Using Environment variables 
+
+        Exposes environment variable via globale vaiable env 
+        Available anywhere within the Jenkins file
+        List of environment vaiables accessible from within Jenkins Pipeline 
+            - BUILD_ID
+            - BUILD_NUMBER 
+            - BUILD_TAG 
+            - BUILD_URL 
+            - EXECUTOR_NUMBER 
+            - JAVA_HOME 
+            - JENKINS_URL 
+            - JOB_NAME
+            - NODE_NAME 
+            - WORKSPACE
+    
+    Setting up environment variable
+
+    Handling credentials
+
+    Handling Parameters
+
+// Running Pipelines 
+
+    - Multibranch 
+    - Additional environment variable 
+    - Supporting pull requests 
+    - Using organization folder 
+    - Restarting or rerunning a pipeline 
+    - Features and Limitations 
+    - restart from a stage 
+
+    Multibranch 
+
+        - Enables you to implement different jenkins files for different branches of the same project 
+        - Jenkins automatically discovers 
+        - Manages and executes pipelines for branches that contain a jenkins file in source control 
+        - Eliminates manual pipeline creation 
+        - Once configuration is saved, Jenkins automatically scan the configured repository 
+        - Create an appropriate item (Jenkinsfile) for each branch in the repository 
+        - By default, Jenkins will not automatically re-index the git repository for additions or deletions 
+        - Advisable to configure the multibranch pipeline to periodically re-index the configuration 
+
+    Additional Environment vaiables
+
+        - Multibranch pipelines expose information about branch through environmental global variables 
+
+        // BRANCH_NAME 
+
+            - Name of the branch for which pipeline is executing 
+
+        // CHANGE_ID 
+
+            - Identifier agree with a achnag erequest, such as pull request number 
+            - Additional environmental vaiables are listed in the Global variable reference. 
+
+    Supporting Pull requests
+
+        Multibranch pipelines can be used for validating the pull or change requests with the appropriate plugins. This functionality is provided by the follwoing plugins. 
+            
+            - GitHub Branch source 
+            - Bitbucket Branch Source 
+            - GitLab Branch Source 
+            - Gitea
+            - Tuleap Git Branch Source 
+            - AWS CodeCommit jobs 
+            - DAGsHub Branch Source 
+
+    Using organization Folder 
+
+        - Jenkins can monitor a full GitHub organization, Bitbucket Team/Project, GitLab organisation, or Gitea organization using Organization Folders. 
+        - It automatically creates new Multibranch pipelines for repositories that contain branches and pull requests containing a Jenkinsfile 
+        - Organization folders are used for the following purposes: 
+
+            1. GitHub in the GitHub Branch Source plugin 
+            2. Bitbucket in the Bitbucket Branch Source plugin 
+            3. GitLab in the GitLab Branch Source plugin 
+            4. Gitea in the Gitea plugin 
+        
+    Rerunning a Pipeline - "Replay" Pipeline Runs with Modifications 
+
+        - Defined inside of classic Jenkins web UI 
+        - Committing to jenkinsfile in source control 
+        - Replay feature allows quick modification and execution of existing pipeline 
+        - Without changing any configuration in the pipeline or creating a new commit. 
+
+    Features and Limitations
+
+        - Can be called multiple times on the same run 
+        - Can also be called on Pipeline runs that are still in-progress 
+        - Referenced Shared Library code is also modifiable 
+
+        - Pipeline that runs with syntax errors cannot be replayed 
+        - Replayed pipeline behavious may differ from runs started by other methods 
+
+    Restart from a stage 
+
+        - Restarts any completed declarative pipeline 
+        - Allows you to return a pipeline from a stage that failed 
+    
+                    
 
 
 
