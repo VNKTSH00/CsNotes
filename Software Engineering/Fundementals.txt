@@ -47,7 +47,7 @@ Phases of SDLC
             - High level design 
                     1. Architecture Design 
                     2. Data Design 
-                    3. Interface Design 
+                    3. Interface Design  
 
             - Low level design 
                     1. Writing the destailed Algorithm 
@@ -215,11 +215,11 @@ SDLC models
 
         Phases of RAD
 
-            - Business Modelling 
-            - Data Modelling 
-            - Proces Modelling 
-            - Application generation 
-            - Testing and turnover 
+            - Business Modelling        (Information flow is identifed in various modules)
+            - Data Modelling            (Information gathered is used to define data objects)    
+            - Process Modelling         (Objects are converted to achieve the business objective)
+            - Application generation    (Automated tools are used to convert process modesl into the actual system)
+            - Testing and turnover      (New components along with all the interfaces are tested)
 
         Advantages 
 
