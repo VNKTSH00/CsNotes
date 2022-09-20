@@ -1,0 +1,161 @@
+// Requirements Analysis 
+
+    - Requirement Engineering 
+    - SRS 
+    - Properties of SRS 
+    - Functional requirements
+    - Non-Functional Requirements 
+    - Entity relationship diagram and its components 
+
+    Requirement Engineering 
+
+        - Requirements Elicitation
+        - Requirement Analysis 
+        - Requirements Documentation 
+        - Requirements Review 
+
+        Requirement Elicitation
+
+        // Getting requirement from stakeholders and customers 
+
+            - Address problems of scope 
+            - Address problems of understanding 
+            - Address problems of volatility (changing requirement)
+
+        Requirement Analysis
+
+        // The process of establishing the services the system should provide and the constraints under which it must operate 
+        // The process of studying and analyzing the customer and the user/stakehoolder to arrive at a definition of software requirements 
+
+            Difficulties 
+
+                - bridging the gap between the client and the software developer 
+                - knowing what should be done vs knowing what to let a computer do 
+                - conflicting demands from different departments 
+                
+                - Expectations, the final solution is difficult to imaging by the users 
+                - Scope of the system needs well defined boundaries 
+                - Process of negotiation between users and designers
+            
+            Goals 
+
+                - To understand the user's requirements 
+                - To remove inconsistencies, anomalies, etc,. form requirements 
+                - Document requirements properly in an SRS Document
+
+            // Person who performs requirement analysis is called a system analyst 
+
+                - Understand user requirement 
+                - Collects data needed for the user requirement 
+                - Writes the software requirement specification 
+
+            Two activiites of Requirement Analysis 
+
+                1. Requirements gathering 
+                2. Analysis of the gathered requirements
+
+                Requirement gathering 
+
+                    - Observation of existing systems 
+                    - Studying existing procedures 
+                    - Discussion with the customer and the end-users
+                    - Having questionnaires to understand user requirements 
+                    - Conducting discussion with domain experts to understand the system 
+                
+        Software Requirement Specification (SRS) - "What to do"
+
+        // Outoome of the analysis phase 
+        // Contains all the information about the requirments gathered 
+        // Objective of SRS is to Systemtatically organize the requirements arrived during the requirements analysis and the documents them 
+
+            SRS document context 
+
+                - Statement of user needs 
+                - Contract Documents 
+                - Reference Document 
+                - Definition for implementation 
+
+            Properties of an SRS 
+
+                - Concise
+                - Specify what the system must do 
+                - Easy to change 
+                - Consistent
+                - Complete 
+                - Traceble 
+                - Verifiable 
+
+            Sections of SRS 
+
+                1. Functional Requirement
+                2. Non-Functional Requirments 
+                3. Constraints on the system 
+
+                Functional Requirements
+
+                    - A set of high-level requirements 
+                    - Each high-level requirement 
+                    - Takes in some data from the user 
+                    - Outputs some data to the  user 
+                    - Might consist of a set of identifiable functions which Process the input 
+                
+                Non-Functional Requirements 
+
+                    - External Interface requirements 
+                        - User Interfaces
+                        - Hardware Interfaces 
+                        - Software Interfaces 
+                        - Communications Interfaces 
+                    - Performance requirements 
+                    - Safety Requirements 
+                    - Security Requirements 
+                    - Software Quality Attributes
+                
+                Constraints 
+
+                    // Constraints describe what the system should and should not do 
+
+                    - Standards compliance 
+                    - How fast the system can produce results so that it does not overload the other system to which it supplies data, etc. 
+                    - Hardware to be used 
+                    - Operating system to be used 
+                    - DBMS to be used 
+                    - Capabilities of I\O devices 
+                    - Data representation 
+        
+        Entity Relationship Diagram (ERD)
+
+            // ER diagram is widely used in databse design 
+
+            - Represents conceptual level of a database system 
+            - Describes things and their relationships in high level 
+            
+            Entity          -> An Entity is a business object that represents a group, or a category of data 
+            Attribute       -> properties of an entity 
+            Relationship    -> Specifies the relations among entities 
+
+            // Relationship specifies association between two entities 
+
+            Cardinatlity 
+
+                - One instance of an entity maps to how many instance of other entity 
+                - Many-to-Many Relationships 
+                - One-to-Many Relationships 
+                - One-to-One Relationships 
+                - Recursive Relationships 
+
+            Optionality 
+
+                - Is the relationship mandatory or optionality 
+                - Mandatory Relationships 
+                - Optional Relationships 
+            
+
+
+
+
+                
+
+        
+        
+
