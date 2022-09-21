@@ -1,0 +1,121 @@
+software configuration 
+
+    - Software Configuration 
+    - Software Configuration Object 
+    - Software Configuration Repository 
+    - Check in check out process 
+    - Change Management 
+    - Version management 
+
+// A configuration is the functional and physical characteristics of a hardware or software as set forth in technical documentation or ahieved in a product 
+
+Configuration Management 
+
+    1. Configuration Identification 
+        // Define the product and its configuration documentation identification 
+    2. Change management 
+        // Control changes to a product and its configuration documentation 
+    3. Configuration Status Accounting 
+        // Provide status and information about a product and its configuration documentation 
+    4. Configuration Audit 
+        // For reviewing he items against various specifications for assessing its quality and correctness 
+
+SCM Defines 
+
+    1. The types of documents to be managed and a document naming scheme 
+    2. Who takes responsibility for the CM procedures and creating of "baselines" 
+    3. Policies for change control and version management 
+    4. The CM records which must be maintained 
+
+Software entities that SCM is expected to manage include: 
+
+    - Plans 
+    - Specifications (SRS, Design)
+    - User Documentation 
+    - Test data 
+    - Support Software tools, Source Code, Executable, and Libraries 
+
+    SCM is said to be effective 
+
+        - When every work product can be accounted for 
+        - When every work product or change made to it can be tracked and controlled 
+
+Types of configuration objects 
+
+    - To manage SCIs they mus tbe separately named and organized using object-oriented approach 
+    - There are two types of Objects 
+        1. Base Object
+            // A base object is the "unit of text" that has been created by a software engineer during analysis, design, code, or test.  
+        2. Aggregate 
+            // An Aggregate Object is a collection of basic objects and other aggregate objects 
+        
+    Baseline    
+
+        // "Specification or product that has been formally reviewed and agreed upon, that thereafter serves as the basis for further development, and that cna be changed 
+            only through formal Change Control Procedures"
+
+    The evolution Graph
+
+        // Describes the change history of an object 
+
+Configuration Repository 
+
+    - All CM information should be maintained in a configuration database 
+    - This should allow queries about configuration to be answered 
+    - The CM database should preferably be linked to the software being managed 
+
+Check -in and Check -out 
+
+    // The Configuration items available in the Configuration Management system will be in read-only mode by default 
+
+    Check in 
+        // An operation used to make a developer's object version available to other users. 
+    Check out 
+        // A process that creates a new version of an object from an existing version stored in the database. 
+
+    Developers check out objects so they can work on them 
+        
+Change Management 
+
+    // Change management is the process during which the changes of a system are implemented in a controlled manner by following a pre-defined framework model with some reasonable modifications 
+
+    Activities in Change Management: 
+
+        - Filtering changes 
+        - Managing changes and the change process 
+        - Reviewing and closing of Requests for change (RFCs)
+        - Managment reporting and providing management information 
+
+    Synchronization control 
+
+        - Helps to ensure that parallel changes performed by two different people don't overwrite each other. 
+        - Locks the object in the project database so that no updates can be made to it until the currently checked out version has been replaced. 
+
+    Change Control Board (CCB) / Software Change Control Board (SCCB)
+
+        - CCB is a committee that makes decisions regarding whether or not proposed changes to a software project should be implemented 
+        - CCB is contituted of project stakeholders or their representatives. 
+
+        Phases of CCB 
+
+            1. Evaluation Phase 
+            2. Resolution Phase 
+            3. Verification Phase 
+
+Version Management 
+
+    - Version Control is a mechanism used to manage multiple vesions of computer files and programs
+    - It allows users to 
+        1. Lock files so they can only be edited by one person at a time 
+        2. Track changes to file 
+    - Version Control allows you a place to store your work as it progresses, and allows you instant recall of any work from any point in time
+    - It also allows others to recall communal work at any time, in a read only fashion, or also to make changes themselves. 
+
+    Benefits of Version Management 
+
+        - Roll back to previous version of a given file 
+        - Compares two version of a file, highlighting differences 
+        - Provides a mechanism of locking, forcing seralized change to any given file
+        - Creates branches that allow for parallel concurrent development 
+        - Maintains an instant audit trail on each and every file: versions, modifeid date, modifier, and any additional amount of meta-data your system provides for and whichever you choose to implement. 
+        
