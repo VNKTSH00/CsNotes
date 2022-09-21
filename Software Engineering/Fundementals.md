@@ -8,7 +8,7 @@ Software Engineering Fundementals
     - Spiral Model 
     - ETVX
 
-// Software Engineering is the application of a systematic, disciplined, quantifiable approach to the design, development, operation and maintenance of software 
+Software Engineering is the application of a systematic, disciplined, quantifiable approach to the design, development, operation and maintenance of software 
 
 Software Crisis
  
@@ -59,7 +59,7 @@ Phases of SDLC
         - unit testing / Module testing is done in this stage by the developers
         - This stage produces the source code, executable, and databases applicable 
 
-    Testing 
+Testing 
 
         // Testing is the process of executing the program with the intent of finding errors 
         // Software testing is a process of verifying and validating that a software application or program meets the business and technical Requirements
@@ -68,14 +68,14 @@ Phases of SDLC
             Validation   -> Confirms that the software meets the business Requirements
             Defect       -> Variance between the expected and actual result 
 
-        levels of Testing 
+    levels of Testing 
 
             - Unit Testing (Module Testing) -> Done by the developer where every unit is tested to check its functional correctness  
             - Integration Testing           -> Is done to check the interface errors between the integrated components 
             - System Testing                -> Testing the integrated system is tested as a whole to check system is functionally or non-functionally correct 
             - Acceptance Testing            -> Is done by the end user for the system accpetance 
 
-    Maintenance
+Maintenance
 
         // Any change that is made to the software after is deployed is known as maintenance
 
