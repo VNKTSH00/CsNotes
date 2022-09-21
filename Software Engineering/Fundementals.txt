@@ -71,8 +71,8 @@ Phases of SDLC
         levels of Testing 
 
             - Unit Testing (Module Testing) -> Done by the developer where every unit is tested to check its functional correctness  
-            - System Testing                -> Testing the integrated system is tested as a whole to check system is functionally or non-functionally correct 
             - Integration Testing           -> Is done to check the interface errors between the integrated components 
+            - System Testing                -> Testing the integrated system is tested as a whole to check system is functionally or non-functionally correct 
             - Acceptance Testing            -> Is done by the end user for the system accpetance 
 
     Maintenance

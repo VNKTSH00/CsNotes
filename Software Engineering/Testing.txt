@@ -1,0 +1,183 @@
+Software Testing 
+
+Contents 
+
+    - Testing 
+    - Importance of testing 
+    - Levels of testing 
+    - Types of testing 
+    - Debugging 
+
+// Process of executing the program with the intent of finding errors 
+// Process of verifying and validating so that a software application or program meets the business and technical requirements that guide its design and development work as expected 
+// Process of  exercising or evaluating a system or system component by manual or automated means to verify that is satisfies specifed requirements, or to identify differences between expected and actual results. 
+
+Importance of testing 
+
+    - Most cost effective approach to build confidence in most of the software systems 
+    - Defects the faults in the software 
+    - Improves the quality and reliability by removing the faults from the software 
+
+    Testing life Cycle 
+
+        - Test Plan 
+            1. Test Resource Creation 
+            2. Test Data Preparation 
+            3. Writing Test Cases 
+        - Test Design 
+        - Test Execution               ----------------------
+            1. Finding Bugs                                  |
+        - Report to the Developer --                         |
+            1. Fix                  | Regression Testing     | Bug Life Cycle  
+        - Verify                  --                         |  
+        - Close                        ----------------------
+
+Types of Testing 
+
+    - Manual Testing 
+    - Automated Testing 
+        1. JAVA - JUNIT
+        2. .Net - N UNIT
+    - Bugzilla 
+        // Defect Tacking tool
+
+Levels of Testing 
+
+    - Unit Testing 
+    - Integration Testing 
+    - System Testing 
+    - Acceptance Testing  
+
+    Unit Testing 
+
+        // Unit Testing to check whether a particular module is implementing its specification 
+        // The cost of fixing a defect detected during unit testing is lesser in comparison to that of defects detected at higher levels
+        // Performed by software Developers, in rare cases testing is done by independent testers
+
+    Integration Testing 
+
+        // Integration Testing is level of the software testing process where individual units are combined and tested as a group 
+        // The purpose of Integration Testing is to expose faults in the interaction between integrated units
+        // Performed by Developers or independant testers       
+    
+        Approaches 
+
+            1. Top Down 
+
+                - Top level units are tested first and lower level units are tested by step by step 
+                - Test drivers are needed to simulate lower level units which may not be available during the initial phases 
+            
+            2. Bottom Up 
+
+                - Bottom level units are testted first and upper level units step by step after that 
+                - Test drivers are needed to simulate higher level units which may not be available during the initial phases 
+
+    System Testing 
+
+        // System testing finds disparities between implementation and specification 
+        // Performed by testers
+
+        Processess 
+
+            1. Functional Testing 
+                - Test the implementation of th business needs 
+            2. Performance Testing 
+                - It will test all the non functional requirements of the system specified in the specification 
+                
+                1. Stress Tests 
+                    // Evaluates the system when stressed to its limits 
+                2. Regression Tests 
+                    // Required when the system being tested is replacing and existing system 
+                3. Usability test 
+                    // Testing characteristics related to user friendliness 
+    
+    Acceptance Testing 
+
+        // Done by the client to test whether the system meets the specified requirements 
+    
+        Types 
+
+            1. Alpha testing -> Done by the client in the developer's environment 
+            2. Beta Testing  -> Done by the client in real world environment 
+        
+Types of Testing 
+
+    - Static Testing 
+
+        //Members 
+
+            Author ; Moderator ; Reader ; Reocrder/Scribe ; Inspector 
+
+        // It is the testing of the software work products such as documents related to software as well as the code manually to find errors 
+        // Execution of the code is not performed. Sanity of the code is checked 
+
+        1. Review 
+            // Process in which the product is re-examined or re-evaluated for possible corrections at the early stage 
+            // The artifcats are manually examined and the findings are recorded 
+            // Artifacts for which reviews are performed are 
+
+                SRS ; Design specification ; Source code ; Test plans ; Test specification ; Test cases ; Test Scripts ; User guides ; Web pages 
+
+            Review Process (Software Engineering/Images/Review.png)
+
+        2. Walkthrough 
+            // Done on the code. The test data examined with code and intermediate results are recorded 
+        3. Inspection 
+            // Inspection involves step by step reading of the product, with each step checked against a predefined list of criteria
+
+    - Dynamic Testing 
+
+        Test Case 
+
+            - Once the test plan for the level of testing has been writeen, the next stage of test design is to specify a set of test cases or test path for each item to be tested at that level 
+            - Each test case will specify how the implementation of the particular requirement or design decision is t be tested and the criteria for success of the test 
+            - A critical test case uncovers a new error 
+
+        1. Black Box testing 
+           
+            // It is testing that ignores the internal mechanism of a system or a component and focuses solely on the outputs generated in response to selected inputs and execution conditions 
+
+            Techniques for generating a testcase 
+
+            Equivalence class partitioning ; Boundary value analysis ; Cause  effect analysis ; Error guessing 
+
+        2. White Box testing (GlassBox/Structural/ClearBox Testing ) 
+
+            // It deals with internal logic and structure of the Code
+            // Derivation of test cases according to the program structure 
+
+            Methods 
+
+                1. Basis Path Testing 
+
+                    Design test cases to cover the following in the code written 
+
+                    1. Every statement (Statement Coverage)
+                    2. Every predicate (Condition) in the code (branch coverage)
+                    3. Loops (loop Coverage)
+                
+                    Derieve a logical complexity measure of procedural design 
+                    McCabe's Number 
+
+Debugging 
+
+    - Debugging is the process of finding the source of already identified bugs and fising it. 
+    - Performed by Developers 
+    - Steps in Debugging 
+
+        1. Find the defect in the code 
+        2. Identify the root cause of the problem 
+        3. Ientify the exact place in the code that is the cause of the problem 
+        4. Fix the defect 
+        5. Recheck to ensure that the defect fixed is working as expected 
+    
+    
+ 
+
+        
+    
+
+    
+
+    
+    
