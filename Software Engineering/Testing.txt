@@ -82,13 +82,12 @@ Levels of Testing
             1. Functional Testing 
                 - Test the implementation of th business needs 
             2. Performance Testing 
-                - It will test all the non functional requirements of the system specified in the specification 
-                
-                1. Stress Tests 
+                - It will test all the non functional requirements of the system specified in the specification    
+            3. Stress Tests 
                     // Evaluates the system when stressed to its limits 
-                2. Regression Tests 
+            4. Regression Tests 
                     // Required when the system being tested is replacing and existing system 
-                3. Usability test 
+            5. Usability test 
                     // Testing characteristics related to user friendliness 
     
     Acceptance Testing 
@@ -119,10 +118,10 @@ Types of Testing
                 SRS ; Design specification ; Source code ; Test plans ; Test specification ; Test cases ; Test Scripts ; User guides ; Web pages 
 
             Review Process (Software Engineering/Images/Review.png)
-
-        2. Walkthrough 
+        2. Behavioural
+        3. Walkthrough 
             // Done on the code. The test data examined with code and intermediate results are recorded 
-        3. Inspection 
+        4. Inspection 
             // Inspection involves step by step reading of the product, with each step checked against a predefined list of criteria
 
     - Dynamic Testing 
@@ -157,7 +156,9 @@ Types of Testing
                     3. Loops (loop Coverage)
                 
                     Derieve a logical complexity measure of procedural design 
-                    McCabe's Number 
+                
+                    //McCabe's Number Cyclonic complexity 
+
 
 Debugging 
 

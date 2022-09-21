@@ -1,0 +1,77 @@
+Maintanence
+
+- Software Evolution 
+- Software change and its Strategies 
+- Software Maintenance 
+- Types of Software Maintenance 
+
+    Software Evolution Approaches
+
+        - Software maintenance 
+        - Architectural Transformation 
+        - Software re-engineering 
+
+    Software Change 
+
+        - New requirements emerge when the software is used 
+        - The business environment changes 
+        - Errors must be repaired 
+        - the performance or reliability may have to be improved
+
+    Software change strategies 
+
+        1. Software Maintenance 
+            - Changes are made in response to changed requirements but the fundemental software structure is stable 
+        2. Architectural Transformation 
+            - The architecture of the system is modified 
+        3. Software Re-engineering 
+            - New functionality is not added to the system but it is restructured and reorganized to facilitate future changes 
+
+    Software Maintenance
+
+        - Modifying the program after it is used 
+        - Does not normally involve major changes to the system's architecture 
+        - Changes are implemented by modifying the existing components or by adding new components to the system 
+
+    Types of Maintenance 
+
+        - Corrective 
+        - Adaptive 
+        - Perfective 
+        - Perventive 
+
+        Corrective Maintenance
+
+            - Maintenance that includes the repair of defects in an existing system 
+            - Defects can stem from    
+                - requirements specifications errors 
+                - Design errors 
+                - About 80% of all problems stem from requirements and design 
+                - Coding errors 
+        
+        Adaptive Maintenance
+
+            - Maintanence to adapt software to changes in the working environment
+            - Invoked by 
+                - Internal needs 
+            - External requirements eg. Changes in law
+
+        Perfective Maintanence
+           
+            - Includes all efforts to polish or refine the quality of the software or the documentation 
+            - Important that the improvement reduces the system maintenance costs 
+
+        Preventive Maintenance
+
+            - Changes made to the system to avoid any software fault in the future   
+
+    Maintanence Costs 
+
+        - Greater than development costs 
+        - Affected by both technical and non-technical factors 
+        - Increaess as software is maintained 
+        - Ageing software can have high support costs
+
+    
+
+
