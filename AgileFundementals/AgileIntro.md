@@ -13,7 +13,19 @@ Agile Methodology
     - A cenceptual framework where software is developed in iterations. 
     - It satisfies the customer through early and continuous delivery of valuable softwrae. 
     - Useful when there is no clarity on the client's requirement or when the client frequently changes his requirement     
-    - The development activities can be carried out using the iterative actions. 
+    - The development activities can be carried out using the iterative actions.
+
+    - Agile Methodology is an approach to project management that uses four values and twelve principles to organize projects 
+    - It works in ongoing sprints of project planning and execution 
+    - Agiles projects require an iterative approach 
+    - Framworks available for Agile methods are 
+
+        1. Scrum 
+        2. Kanban 
+        3. Extreme Programming 
+        4. Dynamic System Development Method (DSDM)
+        5. Feature Driven Development 
+        6. Lean Software Development  
 
     Requirements -> Planning -> Design -> (Development -> Testing -> QA -> Development) -> Deployment -> Maintenance 
 
