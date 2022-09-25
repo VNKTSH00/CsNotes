@@ -14,11 +14,11 @@ Lean Management
         3. Continuous imporovement 
     - Lean Management of encorages shared responsibility and shared leadership 
     - Two main pillars of Lean Methodology: 
-        1. Respect for poeple 
+        1. Respect for people 
         2. Continuous improvement
          
     
-    //Lean management is coufses on adding value to a product/service while eliminating waste 
+    //Lean management is confuses on adding value to a product/service while eliminating waste 
     //It can be the key to turn cost-intensive solutions inot profitable products 
     //Lean Enables companies to tbe more adaptable to market changes 
     //Companies willl benefit from establishing strealined processes, reduced waste, and lower operatational cost 
@@ -38,7 +38,7 @@ Pillars of Lean Management
         - It understands the value of the insights that come from front line workers 
         - Respecting workers and allowing them to openly voice their ideas and concerns has additional benefits
             1. It created the sense fo lighweight leadership 
-            2. Gives employess the opportunity to master their craft 
+            2. Gives employees the opportunity to master their craft 
             3. Instills them a sense of purpose to understand and increase the value of their work 
 
 Lean Principles 
@@ -62,7 +62,7 @@ Value Stream Mapping
     - It will show you where value is being generated and in what proportion different parts of the process do or do not produce value 
     - This big-picture will enables you to detect the steps that don't bring value and eliminate them 
  
- Create Continuous Workflow 
+Create Continuous Workflow 
 
     - Developing a product/service will often include cross-functional teamwork 
     - By breking up work into smaller batches and visualizing the workflow, yo ucan easily detect and remove process roadblocks
