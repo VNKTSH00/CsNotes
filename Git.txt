@@ -148,3 +148,19 @@ The grandparent commit – The following indicate the grandparent commit of the 
 HEAD^^ (or) HEAD~2
 The great-grandparent commit – The following indicate the great-grandparent commit of the current commit
 HEAD^^^ (or) HEAD~3
+
+
+// Stashing 
+
+Git provides an easy way fof stashing these uncommitted changes so that we can return to them later, without having to make unnecessary commits.
+Stashing can be done multiple times 
+
+git stash                           - Stashes the uncommited changes
+git stash pop                       - to bring back the uncommited changes stashed before 
+git stash apply                     - To apply whatever is stashed away, without removing it from the stash. This can be useful if you want to apply stashed changes to multiple branches 
+git stash -u                        - If there are untracked files(files that are never tracked with Git) They will not be included in the stash. 
+                                      So we can use -u to tel git stash to include those untracked files 
+git stash list                      - To view all the stashes which was done multiple times
+git stash apply stash@{#}           - To apply the specific stash to the required place 
+git stash drop                      - To delete a particular stashes 
+git stash clear                     - To clear out all the stashes 
