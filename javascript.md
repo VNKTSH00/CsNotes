@@ -194,7 +194,7 @@ Array methods
     splice - remove/replace elements
     sort - sorts an array
 
-//const & Arrays
+const & Arrays
 
 
 
