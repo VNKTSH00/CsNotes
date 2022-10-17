@@ -57,12 +57,12 @@ Properties of Good Design
 
 Coupling 
 
-    // Coupling is the degree of interaction between two modules 
+    Coupling is the degree of interaction between two modules 
 
     - When two modules are tightly coupled when they depend a great deal on each other 
     - Uncoupled modules have no interconnections at all. They are completely unrelated
 
-    Types of coupling 
+Types of coupling 
 
     - Content Coupling (best)
     - Common Coupling 
@@ -93,9 +93,9 @@ Coupling
     
 Cohesion 
 
-    // Cohesion refers to the dependence within and among a module's internal elements(data, functions, internal modules ). Greater the cohesion, the better is the program design 
+    Cohesion refers to the dependence within and among a module's internal elements(data, functions, internal modules ). Greater the cohesion, the better is the program design 
 
-    Types of cohesion 
+Types of cohesion 
 
     1. Functional Cohesion  (best)
     2. Sequential Cohesion 
