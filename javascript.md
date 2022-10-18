@@ -180,10 +180,10 @@ Arraus are indexed like strings as [0,1,2,3,4,.....,n-1]
 
 Array methods
 
-    1. Push - add to end
-    2. Pop - remove from end and can be saved in a particular variable // video time 1:25:00
-    3. shift - remove from the beginning
-    4. unshift - add to the beginning
+    1. Push() - add to end
+    2. Pop() - remove from end and can be saved in a particular variable // video time 1:25:00
+    3. shift() - remove from the beginning and returns the element removed
+    4. unshift() - add to the beginning
 
     concat - merge Arrays
     includes - looks for a value
@@ -194,24 +194,17 @@ Array methods
     splice - remove/replace elements
     sort - sorts an array
 
-const & Arrays
+Function 
 
+    Declaration
 
+    function "functionName"() {
+        // syntax
+    }
 
+    Function Call
 
-
-
-
-
- 
-
-
-
-
-
-
-    
-
+    functionName();
 
 
 
