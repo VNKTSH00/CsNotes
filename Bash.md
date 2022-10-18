@@ -16,6 +16,7 @@ Linux Commands
         cd ..           -  go to the parent directory (one level)
         cd ~            -  go to the home directory
         cd /            -  go to the root directory
+    find                -  list all the directories with their paths
     mkdir               -  create a new directory
     mkdir /path         -  creates a directory in the specified path
     mkdir -p            -  create any necessary parent directory
@@ -27,8 +28,9 @@ Linux Commands
         rm -ri (decide) -  to verify every file 
 
     mv (oldname) (newName)                 -    to rename files
-    mv (file) (destination)               -    to move files 
-    cp (parentFile) (Destination)          -    to save a copy of a 
+    mv (file) (destination)                -    to move files 
+    cp (parentFile) (Destination)          -    to save a copy of a file in the destination
+    more                                   -    to view the contents of the file
     head (filename)                        -    to view the head part of the file 
     tail (filename)                        -    to view the tail part of the file
     date                                   -    to view the date
