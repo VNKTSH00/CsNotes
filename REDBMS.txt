@@ -1,0 +1,33 @@
+Relational Database commands and functions (PostgreSQL)
+
+
+Commands 
+
+    CREATE DATABASE database_name;                                      -   To create a new database 
+    CREATE TABLE table_name();                                          -   To create a new table inside the working database
+    \l                                                                  -   To list the databases available 
+    \c (database_name);                                                 -   To connect to the database
+    \d                                                                  -   To display the contents of the table while inside 
+                                                                            the  particular database
+        \d table_name;                                                  -   To display a particular table   
+
+    ALTER TABLE table_name ADD COLUMN column_name data_type;            -   To add a column in the required table 
+
+        data_type 
+
+            1. INT 
+            2. VARCHAR (30)
+            3. SERIAL                                                   -   Automatically numbers the contents from 1 -> n
+
+    ALTER TABLE table_name DROP COLUMN column_name;                     -   To remove the column   
+    ALTER TABLE table_name RENAME COLUMN column_name To new_name;       -   To rename the column   
+
+    INSERT INTO table_name (column1, column2) VALUES (row1, row2);      -   To add rows(values) to the table 
+    SELECT * FROM table_name;                                           -   To view the column data in the table 
+    DELETE FROM table_name WHERE condition;                             -   To delete a record (condition -> username='name')
+    DROP TABLE table_name;                                              -   To delete a table
+
+
+    ALTER DATABASE database_name RENAME TO new_name;                    -   To rename the database 
+    
+    UPDATE table_name SET column_name = new_data WHERE condition        -   To update or replace a data 
