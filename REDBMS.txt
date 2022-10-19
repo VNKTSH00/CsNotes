@@ -5,6 +5,7 @@ Commands
 
     CREATE DATABASE database_name;                                      -   To create a new database 
     CREATE TABLE table_name();                                          -   To create a new table inside the working database
+        CREATE TABLE table_name(column_name DATATYPE PRIMARY KEY)       -   To create a table with primary key in one stretch 
     \l                                                                  -   To list the databases available 
     \c (database_name);                                                 -   To connect to the database
     \d                                                                  -   To display the contents of the table while inside 
@@ -29,6 +30,7 @@ Commands
     SELECT * FROM table_name;                                           -   To view the column data in the table 
     DELETE FROM table_name WHERE condition;                             -   To delete a record (condition -> username='name')
     DROP TABLE table_name;                                              -   To delete a table
+    DELETE FROM table_name WHERE condition                              -   To delete a particular data 
 
 
     ALTER DATABASE database_name RENAME TO new_name;                    -   To rename the database 
@@ -44,9 +46,13 @@ Commands
 To create a foreign key for relating rows from two tables
 
 
-    ALTER TABLE table_name2 ADD COLUMN column_name1 DATATYPE REFERENCES referenced_table1(referenced_column_name1);
+    ALTER TABLE table_name2 ADD COLUMN column_name1 DATATYPE REFERENCES referenced_table_name(referenced_column_name);
+    
+        // In this process a new column is created in the second table and referenced to the first table. 
 
-    // In this process a new column is created in the second table and referenced to the first table. 
+    ALTER TABLE table_name ADD FOREIGN KEY (column_name) REFERENCES table_name(column_name);
+
+        // To make a column as foreign key in the process of creating Junction tables 
 
 Enforcing a UNIQUE constraint to the foreign key 
 
@@ -56,6 +62,22 @@ Setting column to be NOT NULL
 
     ALTER TABLE table_name2 ALER COLUMN column_name1 SET NOT NULL; 
 
+Setting NOT NULL and UNIQUE while creating a column 
+
+    ALTER TABLE table_name ADD COLUMN column_name DATATYPE NOT NULL UNIQUE; 
+
 Finding the details of a particular row 
 
-    SELECT column_name, column_name FROM table_name WHERE condition; // column_name are the requried data to be viewed
+    SELECT column_name, column_name,.. FROM table_name WHERE condition; // column_name are the requried data to be viewed
+
+
+Command to view two linked tables (JOIN)
+
+    SELECT * FROM table1 FULL JOIN table2 ON table1.primary_key_column = table2.primary_key_column; 
+
+Command to view two many to many lined tables via junction table
+
+    SELECT * FROM junction_table
+    FULL JOIN table_1 ON junction_table.foreign_key_column = table_1.primary_key-column
+    FULL JOIN table_2 ON junction_table.foreign_key_column = table_2.primary_key-column;
+
