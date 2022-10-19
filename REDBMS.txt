@@ -18,11 +18,14 @@ Commands
             1. INT 
             2. VARCHAR (30)
             3. SERIAL                                                   -   Automatically numbers the contents from 1 -> n
+            4. DATE                                                     -   For entering dates (Should be entered in string format)
+            5. NUMERIC (4,1)                                            -   For 4 digits and one of them has to be right of the decimal 
 
     ALTER TABLE table_name DROP COLUMN column_name;                     -   To remove the column   
     ALTER TABLE table_name RENAME COLUMN column_name To new_name;       -   To rename the column   
 
     INSERT INTO table_name (column1, column2) VALUES (row1, row2);      -   To add rows(values) to the table 
+
     SELECT * FROM table_name;                                           -   To view the column data in the table 
     DELETE FROM table_name WHERE condition;                             -   To delete a record (condition -> username='name')
     DROP TABLE table_name;                                              -   To delete a table
@@ -31,3 +34,28 @@ Commands
     ALTER DATABASE database_name RENAME TO new_name;                    -   To rename the database 
     
     UPDATE table_name SET column_name = new_data WHERE condition        -   To update or replace a data 
+
+    SELECT * FROM table_name ORDER BY column_name                       -   To Order contents in the table with respect to the entity
+
+    ALTER TABLE table_name ADD PRIMARY KEY(column_name);                -   To set a column as a primary key (there can be only one primary key in a table)
+    ALTER TABLE table_name DROP CONSTRAINT constraint_name;             -   To remove the current constraint (shown in indexes below the table)
+
+
+To create a foreign key for relating rows from two tables
+
+
+    ALTER TABLE table_name2 ADD COLUMN column_name1 DATATYPE REFERENCES referenced_table1(referenced_column_name1);
+
+    // In this process a new column is created in the second table and referenced to the first table. 
+
+Enforcing a UNIQUE constraint to the foreign key 
+
+    ALTER TABLE table_name2 ADD UNIQUE(column_name1);
+
+Setting column to be NOT NULL
+
+    ALTER TABLE table_name2 ALER COLUMN column_name1 SET NOT NULL; 
+
+Finding the details of a particular row 
+
+    SELECT column_name, column_name FROM table_name WHERE condition; // column_name are the requried data to be viewed
