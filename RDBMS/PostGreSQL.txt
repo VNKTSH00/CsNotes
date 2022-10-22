@@ -60,7 +60,7 @@ Enforcing a UNIQUE constraint to the foreign key
 
 Setting column to be NOT NULL
 
-    ALTER TABLE table_name2 ALER COLUMN column_name1 SET NOT NULL; 
+    ALTER TABLE table_name2 ALTER COLUMN column_name1 SET NOT NULL; 
 
 Setting NOT NULL and UNIQUE while creating a column 
 
