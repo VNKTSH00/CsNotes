@@ -93,12 +93,51 @@ mkdir {1..99}.txt                       -     creates (1.txt -> 99.txt) 99 direc
      
 diff (firstFile) (secondFile)           -     to find the difference between two different files 
 
-diff -u (fileName1) (fileName2)     -     to get the detailed view of the changes 
+diff -u (fileName1) (fileName2)         -     to get the detailed view of the changes 
 
                                            
 time 2:21:20 
 
-next up 
+find   // big concept  
+
+    to find files and directories 
+
+        find . -name '*.js'             -   To find all the files under the current tree that have the .js extension and print the
+                                            relative path of each file 
+
+        find . -type d -name '*E*'      -   to find all directories which has uppercase E in it  // d for directory 
+        find . -type f                  -   to find all files                                    // f for files 
+
+    can be used with -or and -not operators and so on 
+
+grep    // big concept 
+
+    helps to find text inside the file 
+
+        grep TEXT filename              -   shows the TEXT located in the file 
+        grep -r TEXT .                  -   lists and shows all the location of TEXT in all directories
+        grep -ri TEXT .                 -   lists and shows all the location of TEXT in all directories without case sensitive
+
+sizes of files and folders
+
+    du                                  -   to find the sizes of the directories
+        du filename                     -   to find size for a particular directories
+        du -m                           -   to find the size on megagbytes
+        du -mh                          -   to find the size on megagbytes in a human readable format 
+        du -h | sort -h                 -   to sort all the file in the . sorted by size from small to big
+
+    df  
+        df -h                           -   to list long record of the sizes of files and directories
+                    
+
+
+
+
+
+
+
+
+
 
 
 
