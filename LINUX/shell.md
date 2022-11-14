@@ -41,6 +41,9 @@ IF ELSE statement (syntax)
     -gt     -       greater than 
     -ge     -       greater than or equal 
 
+    ==      -       equal 
+    =~      -       pattern matching
+
 ELSE IF statement 
 
     if (( ## >= ##))
@@ -63,6 +66,13 @@ WHILE loop (syntax)
     while [[ condition ]]
     do 
         statement                           // for increment or decrement use double parantheses like (( I-- ))
+    done
+
+UNTIL look (Syntax)
+
+    until [[ CONDITION ]]
+    do 
+        STATEMENTS 
     done
 
 EXIT status
