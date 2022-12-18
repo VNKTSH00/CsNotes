@@ -41,6 +41,7 @@ Commands
 
     ALTER TABLE table_name ADD PRIMARY KEY(column_name);                -   To set a column as a primary key (there can be only one primary key in a table)
     ALTER TABLE table_name DROP CONSTRAINT constraint_name;             -   To remove the current constraint (shown in indexes below the table)
+    ALTER TABLE table_name DROP CONSTRAINT foreign_key_name;            -   to remove the foreign key 
 
 
 To create a foreign key for relating rows from two tables

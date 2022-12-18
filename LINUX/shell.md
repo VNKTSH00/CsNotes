@@ -49,7 +49,7 @@ ELSE IF statement
     if (( ## >= ##))
     then 
         statement 
-    elif [[ $## -le ##]]
+    elif [[ $## -le ## ]]
     then 
         statement
     fi
@@ -108,8 +108,6 @@ Declaration
     let c=a-b
     let c=a*b
     let c=a/b
-
-
 
 ARRAYS
 
